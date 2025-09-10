@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asociación Cultural Colonia Esperanza</title>
+    <title>Club Social Esperanza</title>
     <!-- Incluir la librería de Tailwind CSS para un diseño moderno y responsive -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -19,7 +19,7 @@
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-6 md:py-8 flex justify-between items-center">
             <h1 class="text-2xl md:text-3xl font-bold text-indigo-800">
-                Colonia Esperanza
+                Club Social Esperanza
             </h1>
             <nav class="hidden md:flex space-x-6">
                 <a href="#donde-estamos" class="text-gray-600 hover:text-indigo-600 transition duration-300">Dónde estamos</a>
@@ -49,7 +49,10 @@
                     Un espacio de encuentro, aprendizaje y comunidad
                 </h2>
                 <p class="mt-4 text-lg md:text-xl text-gray-600">
-                    Únete a la Asociación Cultural de la Colonia Esperanza de Madrid.
+                    Únete al Club Esperanza de Madrid.
+                   <a href="" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                Envíanos
+            </a>
                 </p>
             </div>
         </section>
@@ -114,6 +117,35 @@
                 <!-- El calendario se rellenará dinámicamente con JavaScript -->
             </div>
         </section>
+
+        <section id="contacto" class="bg-white rounded-3xl p-6 md:p-10 shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-800 mb-6 border-b-2 border-indigo-200 pb-2">
+                Contacto
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                ¿Tienes alguna pregunta, sugerencia o simplemente quieres saludar? Rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+            </p>
+            <!-- El formulario se enviará a Formspree. ¡IMPORTANTE! Reemplaza la URL con tu propia URL de Formspree. -->
+            <form action="https://formspree.io/f/mrbajoop" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Tu nombre</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-indigo-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Tu correo electrónico</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-indigo-500" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-indigo-500" required></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105">
+                        Enviar mensaje
+                    </button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="bg-gray-800 text-white text-center py-6 mt-12">
@@ -177,4 +209,5 @@
     </script>
 </body>
 </html>
+
 
