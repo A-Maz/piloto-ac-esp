@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Cultural Colonia Esperanza</title>
+    <!-- Incluir la librería de Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Encabezado y Navegación -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 md:py-8 flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold text-indigo-800">
+                Colonia Esperanza
+            </h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#donde-estamos" class="text-gray-600 hover:text-indigo-600 transition duration-300">Dónde estamos</a>
+                <a href="#participar" class="text-gray-600 hover:text-indigo-600 transition duration-300">Cómo participar</a>
+                <a href="#calendario" class="text-gray-600 hover:text-indigo-600 transition duration-300">Actividades</a>
+            </nav>
+            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-sm py-2">
+            <a href="#donde-estamos" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Dónde estamos</a>
+            <a href="#participar" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Cómo participar</a>
+            <a href="#calendario" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Actividades</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 md:py-16">
+
+        <!-- Sección de bienvenida -->
+        <section class="text-center mb-16 md:mb-24">
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-indigo-900 leading-tight">
+                    Un espacio de encuentro, aprendizaje y comunidad
+                </h2>
+                <p class="mt-4 text-lg md:text-xl text-gray-600">
+                    Únete a la Asociación Cultural de la Colonia Esperanza de Madrid.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 1: Dónde estamos -->
+        <section id="donde-estamos" class="bg-white rounded-3xl p-6 md:p-10 shadow-lg mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-800 mb-6 border-b-2 border-indigo-200 pb-2">
+                Dónde estamos
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Nos encontramos en el corazón del distrito de Hortaleza, en la hermosa y tranquila Colonia Esperanza de Madrid. Nuestro punto de encuentro es un lugar clave para la vida comunitaria en la zona.
+            </p>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Estamos ubicados en <span class="font-semibold text-indigo-600">[Dirección del local o punto de encuentro]</span>, un espacio de fácil acceso y cerca de paradas de autobús y metro.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                ¡Ven a conocernos! Puedes encontrarnos fácilmente en el mapa:
+            </p>
+            <a href="https://maps.google.com/maps?q=Colonia%20Esperanza%2C%20Madrid" target="_blank" class="mt-4 inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                Ver en Google Maps
+            </a>
+        </section>
+
+        <!-- Sección 2: Cómo participar -->
+        <section id="participar" class="bg-white rounded-3xl p-6 md:p-10 shadow-lg mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-800 mb-6 border-b-2 border-indigo-200 pb-2">
+                Cómo puedes participar
+            </h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                ¡Tu participación es la clave para mantener viva nuestra asociación! Hay muchas formas de unirte a nosotros y contribuir a la comunidad:
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-indigo-50 p-6 rounded-2xl border border-indigo-200">
+                    <h3 class="font-bold text-xl text-indigo-900 mb-2">Asiste a nuestras actividades</h3>
+                    <p class="text-gray-600">
+                        La forma más sencilla de empezar es viniendo a nuestros eventos. Revisa el calendario y elige las actividades que más te interesen.
+                    </p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-2xl border border-indigo-200">
+                    <h3 class="font-bold text-xl text-indigo-900 mb-2">Hazte socio</h3>
+                    <p class="text-gray-600">
+                        Si quieres contribuir de forma más activa y apoyar financieramente la asociación, puedes hacerte socio. Contacta con nosotros para más información.
+                    </p>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-2xl border border-indigo-200">
+                    <h3 class="font-bold text-xl text-indigo-900 mb-2">Propón una actividad</h3>
+                    <p class="text-gray-600">
+                        ¿Tienes una idea para un taller, charla, club de lectura o cualquier otro evento? ¡Cuéntanosla! Siempre estamos abiertos a nuevas propuestas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Calendario de actividades -->
+        <section id="calendario" class="bg-white rounded-3xl p-6 md:p-10 shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-800 mb-6 border-b-2 border-indigo-200 pb-2">
+                Calendario de actividades
+            </h2>
+            <div id="actividades-list" class="space-y-6">
+                <!-- El calendario se rellenará dinámicamente con JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+        <p>&copy; 2024 Asociación Cultural Colonia Esperanza. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para el menú móvil y para rellenar el calendario -->
+    <script>
+        // Lógica para el menú móvil
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Datos del calendario (puedes añadir o modificar aquí)
+        const actividades = [
+            {
+                nombre: "Taller de fotografía básica",
+                fecha: "Sábado, 28 de septiembre",
+                hora: "17:00 - 19:00",
+                descripcion: "Aprende a usar tu cámara o móvil para sacar fotos increíbles. No se requiere experiencia previa.",
+                lugar: "Sala multiusos"
+            },
+            {
+                nombre: "Club de lectura: 'El Quijote'",
+                fecha: "Miércoles, 2 de octubre",
+                hora: "19:30 - 21:00",
+                descripcion: "Únete a nuestro club de lectura para discutir los primeros capítulos de esta obra maestra.",
+                lugar: "Biblioteca de la asociación"
+            },
+            {
+                nombre: "Jornada de limpieza del barrio",
+                fecha: "Domingo, 6 de octubre",
+                hora: "10:00 - 12:00",
+                descripcion: "Ayuda a mantener nuestra comunidad limpia y bonita. ¡Tu esfuerzo hace la diferencia!",
+                lugar: "Punto de encuentro: Plaza central"
+            }
+        ];
+
+        // Rellenar el calendario
+        const calendarioDiv = document.getElementById('actividades-list');
+        if (actividades.length === 0) {
+            calendarioDiv.innerHTML = '<p class="text-center text-gray-500">No hay actividades programadas por el momento.</p>';
+        } else {
+            actividades.forEach(actividad => {
+                const actividadDiv = document.createElement('div');
+                actividadDiv.classList.add('bg-indigo-50', 'rounded-2xl', 'p-6', 'border', 'border-indigo-200');
+                actividadDiv.innerHTML = `
+                    <h3 class="font-semibold text-xl text-indigo-900 mb-1">${actividad.nombre}</h3>
+                    <p class="text-sm text-gray-500 mb-2">
+                        <span class="font-medium">${actividad.fecha}</span> • ${actividad.hora}
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">${actividad.descripcion}</p>
+                    <p class="text-sm text-gray-600 mt-2"><span class="font-medium">Lugar:</span> ${actividad.lugar}</p>
+                `;
+                calendarioDiv.appendChild(actividadDiv);
+            });
+        }
+    </script>
+</body>
+</html>
